@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Registration() {
   return (
@@ -94,7 +95,7 @@ function Registration() {
               {/* Registration button */}
               <button
                 type="submit"
-                className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+                className="w-full bg-primary text-black py-2 px-4 rounded-md hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
               >
                 Register
               </button>
@@ -102,9 +103,9 @@ function Registration() {
               {/* Login link */}
               <p className="mt-4 text-sm">
                 Already have an account?{" "}
-                <a href="#!" className="font-medium text-primary hover:underline">
+                <NavLink to="/" className="font-medium text-primary hover:underline">
                   Log in
-                </a>
+               </NavLink>
               </p>
             </form>
           </div>

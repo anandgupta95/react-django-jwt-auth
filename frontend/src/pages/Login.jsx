@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Login() {
   return (
@@ -92,7 +93,7 @@ function Login() {
               {/* Login button */}
               <button
                 type="submit"
-                className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+                className="w-full bg-primary text-black py-2 px-4 rounded-md hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
               >
                 Log in
               </button>
@@ -100,9 +101,9 @@ function Login() {
               {/* Register link */}
               <p className="mt-4 text-sm">
                 Don't have an account?{" "}
-                <a href="#!" className="font-medium text-primary hover:underline">
+                <NavLink to="/register" className="font-medium text-primary hover:underline">
                   Register
-                </a>
+                </NavLink>
               </p>
             </form>
           </div>
